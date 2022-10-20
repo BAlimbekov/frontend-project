@@ -12,21 +12,35 @@
 <body>
     <div class = 'exchange'>
         <label for="from">From:</label> <br>
-        <label for="fromCurrency"> Choose Currency</label>
+        <label for="fromCurrency"> Write Currency</label>
         <input class = 'fromCurrency' type="text" name="fromCurrency" id="fromCurrency"><br>
         <label for="to"> TO:</label> <br>
-        <label for="toCurrency"> Choose Currency</label>
+        <label for="toCurrency"> Write Currency</label>
         <input class='toCurrency' type="text" name="toCurrency" id="toCurrency"><br>
         <input class='btnSubmit' type="submit" value="Submit">
         <h1 class = 'output'> Your Result will be Here</h1>
+    </div><br>
+
+    <div class = 'exchangeDropDown'>
+ 
+            <label>Choose a Currency:</label>
+            <select class="firstCurrency" id="Currency1">
+                <option value="">--Please chose a Currency--</option>
+            </select>
+            <br><br>
+            <label>Choose a Currency:</label>
+            <select class="secondCurrency" id="Currency2">
+                <option value="">--Please chose a Currency--</option>
+            </select>
+            <input class='btnSubmit2' type="submit" value="Submit">
+            <h1 class = 'output2'> Your Result will be Here</h1>
+    
     </div>
 
 
 
 
 
-
-    
 
     <script src="./app.js"></script>
 </body>
