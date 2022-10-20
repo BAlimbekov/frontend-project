@@ -68,7 +68,7 @@ function getResult(){
         request.send();
         request.onload = function() {
             var response = request.response;
-            document.getElementsByClassName('output2')[0].innerHTML = response.result;
+            document.getElementsByClassName('output3')[0].innerHTML = response.result;
         };
     });
 }
