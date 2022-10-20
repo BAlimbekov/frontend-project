@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,48 +10,59 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 </head>
+<div id="bodyE">
 <header>
 <h1 class ='header-content' class="text-success" >Wold Wide Exchange Site</h1>  
 <h1 class="emptyHeader"></h1> 
 <h4 class = 'top-right'> Today's Date: <span id ='datetime'> </span></h4>   
 </header>
 <body>
-    <div class = 'exchange'>
-        <label for="from">From:</label> <br>
-        <label for="fromCurrency"> Currency Symbol</label>
-        <input class = 'fromCurrency' type="text" name="fromCurrency" id="fromCurrency"><br>
-        <label for="amountFrom"> ---Amount---</label>
-        <input class = 'amountFrom' type="text" name="amountFrom" id="amountFrom">
-        = <output class ='output1'></output> <br>
-        <label for="to"> TO:</label> <br>
-        <label for="toCurrency"> Currency Symbol</label>
-        <input class='toCurrency' type="text" name="toCurrency" id="toCurrency"><br>
-        <label for="amountTo"> ---Amount---</label>
-        <input class = 'amountTo' type="text" name="amountTo" id="amountTo">
-        = <output class ='output2'></output> <br>
-        <input class='btnSubmit' type="submit" value="Submit"><br>
-       <h1 class = 'output'> Exchange Rate Will Be Here</h1>
+    <div class="everything">
+        <div class = 'exchange'>
+           <div class ='from'>
+            <h5 for="from" >From:</h5> 
 
+            <label class='lebels' for="fromCurrency"> Currency Symbol</label>
+            <input class = 'fromCurrency' type="text" name="fromCurrency" id="fromCurrency"><br>
+            <label class='lebels' for="amountFrom"> Amount</label>
+            <input class = 'amountFrom' type="text" name="amountFrom" id="amountFrom">
+            = <output class ='output1'></output> <br>
 
-    </div><br>
+           </div>
+           <div class="to">
+            <h5 for="to"> TO:</h5>
+           
+            <label class='lebels' for="toCurrency"> Currency Symbol</label>
+            <input class='toCurrency' type="text" name="toCurrency" id="toCurrency"><br>
+            <label class='lebels' for="amountTo"> Amount</label>
+            <input class = 'amountTo' type="text" name="amountTo" id="amountTo">
+            = <output class ='output2'></output> <br>
+            
+            <input class='btnSubmit' type="submit" value="Submit"><br>
+            <h5 class = 'output'> Exchange Rate Will Be Here</h5>
+         
+    </div> 
+        </div>
 
-    <div class = 'exchangeDropDown'>
- 
-            <label>Choose a Currency:</label>
-            <select class="firstCurrency" id="Currency1">
-                <option value="">--Please chose a Currency--</option>
-            </select>
-            <br><br>
-            <label>Choose a Currency:</label>
-            <select class="secondCurrency" id="Currency2">
-                <option value="">--Please chose a Currency--</option>
-            </select>
-            <input class='btnSubmit2' type="submit" value="Submit">
-            <h1 class = 'output3'> Exchange Rate Will Be Here</h1>
+        <br>
+
+        <div class = 'exchangeDropDown'>
     
+                <label>Choose a Currency:</label>
+                <select class="firstCurrency" id="Currency1">
+                    <option value="">--Please chose a Currency--</option>
+                </select>
+                <br><br>
+                <label>Choose a Currency:</label>
+                <select class="secondCurrency" id="Currency2">
+                    <option value="">--Please chose a Currency--</option>
+                </select>
+                <input class='btnSubmit2' type="submit" value="Submit">
+                <h3 class = 'output3'> Exchange Rate Will Be Here</h3>
+        
+        </div>
+
     </div>
-
-
 
 
 
@@ -60,6 +71,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <h1>Hello</h1>
+    <h6>Created by Roohullah Mansoor. &copy; 2022</h6>
 </footer>
+</div>
 </html>
