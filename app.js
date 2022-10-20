@@ -15,8 +15,6 @@ btnSubmit.addEventListener('click', function(){
     request.responseType = 'json';
     request.send();
     
-   
-
     request.onload = function() {
         var response = request.response;
         document.getElementsByClassName('output')[0].innerHTML = response.result;
@@ -30,7 +28,7 @@ btnSubmit.addEventListener('click', function(){
 
  
 var requestURL = 'https://api.exchangerate.host/symbols';
-var request = new XMLHttpRequest();
+var request = new XMLHttpRequest();  
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
