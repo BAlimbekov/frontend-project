@@ -20,8 +20,8 @@ btnSubmit.addEventListener('click', function(){
     request.onload = function() {
         var response = request.response;
         document.getElementsByClassName('output')[0].innerHTML = response.result;
-        document.getElementsByClassName('output1')[0].innerHTML = response.result * inputFirst;
-        document.getElementsByClassName('output2')[0].innerHTML = inputSecond / response.result;
+        document.getElementsByClassName('output1')[0].innerHTML = (response.result * inputFirst).toFixed(4);
+        document.getElementsByClassName('output2')[0].innerHTML = (inputSecond / response.result).toFixed(4);
         
     };
 });
@@ -74,3 +74,6 @@ function getResult(){
 }
 
 getResult();
+
+var dt = new Date();
+document.getElementById('datetime').innerHTML =  dt.toLocaleDateString();
