@@ -4,6 +4,10 @@ var btnSubmit = document.getElementsByClassName('btnSubmit')[0];
 btnSubmit.addEventListener('click', function(){  
     var fromCurrency = document.getElementsByClassName('fromCurrency')[0].value.toUpperCase();
     var toCurrency = document.getElementsByClassName('toCurrency')[0].value.toUpperCase();
+    var inputFirst = document.getElementsByClassName('amountFrom')[0].value *1;
+    var inputSecond = document.getElementsByClassName('amountTo')[0].value *1;
+    
+    //var output1 = inputFirst * 
  
     var requestURL = `https://api.exchangerate.host/convert?from=${fromCurrency}&to=${toCurrency}`;
     var request = new XMLHttpRequest();
@@ -11,11 +15,14 @@ btnSubmit.addEventListener('click', function(){
     request.responseType = 'json';
     request.send();
     
-
+   
 
     request.onload = function() {
         var response = request.response;
         document.getElementsByClassName('output')[0].innerHTML = response.result;
+        document.getElementsByClassName('output1')[0].innerHTML = response.result * inputFirst;
+        document.getElementsByClassName('output2')[0].innerHTML = inputSecond / response.result;
+        
     };
 });
 
