@@ -21,14 +21,7 @@ btnSubmit.addEventListener('click', function(){
 
 // Phase 2, user being able to select the currency from dropdown menu.
 
-
-
-// var btnSubmit = document.getElementsByClassName('btnSubmit')[0];
-// btnSubmit.addEventListener('click', function(){  
-//     var firstCurrency = document.getElementById('Currency1').value;
-//     var secondCurrency = document.getElementById('Currency2').value;
  
-
 var requestURL = 'https://api.exchangerate.host/symbols';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
